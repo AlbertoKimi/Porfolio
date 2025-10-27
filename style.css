@@ -1,8 +1,219 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
+:root {
+
+  --Primario: #FFFFFF;
+  --Secundario: #DDCCAC;
+  --Apoyo: #D3B574;
+  --Texto: #000000;
+
+  --font-size-h1: 48px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+  --font-size-p: 20px;
+  --small-size: 16px;
+
+  --Family-h1: [Carrois Gothic](https: //fonts.google.com/specimen/Carrois+Gothic);
+  --Family-rest: [Bree Serif](https: //fonts.google.com/specimen/Bree+Serif);
+
+}
+
+body {
+      display: grid;
+      grid-template-rows: auto 1fr 100px;
+      min-height: 100vh;
+      background-image: url(/Porfolio/Imagenes/fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    header {
+
+      background-color: var(--Primario);
+      display: flex;
+      padding: 1rem 5%;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      z-index: 100;
+
+    }
+
+    #logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 80px;
+    }
+
+    #logo img {
+      height: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--Texto);
+      font-size: var(--font-size-p);
+      font-family: var(--Family-rest);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c4a570;
+    }
+
+    footer {
+      background-color: var(--Secundario);
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+
+    }
+
+    footer p {
+      font-size: var(--small-size);
+      color: var(--Primario);
+    }
+
+    main {
+      display:flex;
+      height: 90%;
+      flex-direction: column;
+
+    }
+
+    /*.proyectos{
+      display: flex;
+      height: 60%;
+      background-color: var(--Primario);
+      flex-direction: column;
+  
+    }
+
+    .proyectos img{
+      height: 50%;
+    }*/
+
+    .caja-proyecto {
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      border-radius: 80px;
+      height: 510px;
+      
+    }
+
+    .proyectos {
+
+      padding: 5rem 5%;
+      /*display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;*/
+      position: relative;
+      height: 100%;
+      
+    }
+
+    .manga-image {
+      flex: 0 0 300px;
+      padding: 20px;
+      border-radius: 10px;
+      
+    }
+
+    .manga-image img {
+      width: 110%;
+      /*height: auto;*/
+      /*display: block;*/
+      
+    }
+
+    .projects-content {
+      flex: 1;
+      max-width: 600px;
+      text-align: center;
+      color: var(--Texto);
+      position: relative;
+      z-index: 1;
+    }
+
+    .projects-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--Apoyo);
+      margin-top: 100px;
+    }
+
+    .projects-content p {
+      margin-bottom: 2rem;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .btn-secondary {
+      background: #c4a570;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: #c4a570;
+    }
+
+    .sobremi {
+      background: var(--Secundario);
+      padding: 3rem;
+      text-align: center;
+      position: relative;
+ 
+      
+    }
 
 
+    .sobremi h2 {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .sobremi p {
+      color: white;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 35px;
+      background: #c4a570;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid #c4a570;
+      font-weight: bold;
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+    }
