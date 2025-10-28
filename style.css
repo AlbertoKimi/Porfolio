@@ -378,3 +378,105 @@
       color: var(--Texto);
       text-align: justify;
     }
+
+    /*Formulario*/
+
+    .contenedor-principal {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      gap: 100px;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 10rem;
+      height: 100%;
+    }
+
+
+    .seccion-comic {
+      width: 400px;
+      height: 550px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .imagen-comic {
+      width: 100%;
+      height: 100%;
+      display: block;
+
+    }
+
+    .imagen-comic img {
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .seccion-formulario {
+
+      width: 320px;
+      background-color: var(--Primario);
+      border-radius: 15px;
+      padding: 35px;
+      
+    }
+
+    .campo-formulario {
+      margin-bottom: 25px;
+    }
+
+    .campo-formulario label {
+      display: block;
+      font-size: var(--font-size-p);
+      font-weight: 500;
+      color: var(--Texto);
+      margin-bottom: 8px;
+    }
+
+    .campo-formulario input,
+    .campo-formulario textarea {
+      width: 85%;
+      padding: 12px 15px;
+      border: 1px solid #d0d0d0;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      transition: border-color 0.3s;
+    }
+
+    .campo-formulario input:focus,
+    .campo-formulario textarea:focus {
+      outline: none;
+      border-color: #c9a961;
+    }
+
+    .campo-formulario input::placeholder,
+    .campo-formulario textarea::placeholder {
+      color: #bbb;
+    }
+
+    .campo-formulario textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .boton-enviar {
+      width: 95%;
+      padding: 14px;
+      background-color: var(--Secundario);
+      color: white;
+      border: 2px solid var(--Texto);
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .boton-enviar:hover {
+      background-color: var(--Apoyo);
+    }
