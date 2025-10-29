@@ -58,6 +58,7 @@
     display: block;
     font-size: var(--font-size-p);
     font-weight: 500;
+    font-family: var(--Family-rest);
     color: var(--Texto);
     margin-bottom: 8px;
 
@@ -68,11 +69,11 @@
 
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid #d0d0d0;
+    border: 3px solid #d0d0d0;
     border-radius: 8px;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    background-color: white;
+    font-size: var(--small-size);
+    font-family: var(--Family-rest);
+    background-color: var(--Primario);
     transition: border-color 0.3s;
 
 }
@@ -81,7 +82,7 @@
 .campo-formulario textarea:focus {
 
     outline: none;
-    border-color: #c9a961;
+    border-color: var(--Apoyo);
 
 }
 
@@ -103,10 +104,10 @@
     width: 100%;
     padding: 14px;
     background-color: var(--Secundario);
-    color: white;
+    color: var(--Primario);
     border: 2px solid var(--Texto);
     border-radius: 8px;
-    font-size: 16px;
+    font-size: var(--font-size-p);
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s;

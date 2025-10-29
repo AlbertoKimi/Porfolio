@@ -1,6 +1,6 @@
 .caja-comic-2 {
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--Primario-opacidad);
     display: flex;
     flex-direction: column;
     gap: 20px;

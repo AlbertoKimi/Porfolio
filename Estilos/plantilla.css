@@ -7,8 +7,11 @@
 :root {
 
   --Primario: #FFFFFF;
+  --Primario-opacidad:  rgba(255, 255, 255, 0.9);
   --Secundario: #DDCCAC;
+  --Secundario-opacidad: hsl(39, 42%, 77%, 90%);
   --Apoyo: #D3B574;
+  --Apoyo-opacidad: hsl(41, 52%, 64%, 90%);
   --Texto: #000000;
 
   --font-size-h1: 48px;
@@ -17,8 +20,8 @@
   --font-size-p: 20px;
   --small-size: 16px;
 
-  --Family-h1: [Carrois Gothic](https: //fonts.google.com/specimen/Carrois+Gothic);
-  --Family-rest: [Bree Serif](https: //fonts.google.com/specimen/Bree+Serif);
+  --Family-h1: 'Carrois Gothic';
+  --Family-rest: 'Bree Serif';
 
 }
 
@@ -72,7 +75,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #c4a570;
+    color: var(--Apoyo-opacidad);
 }
 
 footer {
@@ -114,7 +117,7 @@ main {
 
 .proyecto h2 {
 
-    color: white;
+    color: var(--Primario);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -124,7 +127,7 @@ main {
 
 .caja-comic {
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--Primario-opacidad);
     display: flex;
     gap: 20px;
     margin: 0 auto;

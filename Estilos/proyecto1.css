@@ -1,10 +1,18 @@
 .grid-item-left {
 
     flex: 0 0 400px;
-    height: 98%;
+    height: 100%;
     border: 5px solid var(--Texto);
     background-color: #d3d3d3;
+    position: relative;
+    overflow: hidden;
       
+}
+
+.grid-item-left img{
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
 }
 
 .grid-right {
@@ -26,7 +34,17 @@
     border: 5px solid var(--Texto);
     background-color: #d3d3d3;
     min-height: 0;
-    width: 99%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.grid-item-top img{
+  object-position: center top;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
 
 }
 
@@ -48,6 +66,8 @@
     background-color: #d3d3d3;
     min-width: 0;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -58,72 +78,81 @@
     background-color: #d3d3d3;
     min-width: 0;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 
- /* Overlay del hover */
-    .overlay-hover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.85);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
+ /* HOVER */
 
-    .grid-item-left:hover .overlay-hover,
-    .grid-item-top:hover .overlay-hover,
-    .grid-item-bottom-left:hover .overlay-hover,
-    .grid-item-bottom-right:hover .overlay-hover {
-      opacity: 1;
-    }
+.overlay-hover {
 
-    .grid-item-left:hover .imagen-proyecto,
-    .grid-item-top:hover .imagen-proyecto,
-    .grid-item-bottom-left:hover .imagen-proyecto,
-    .grid-item-bottom-right:hover .imagen-proyecto {
-      transform: scale(1.1);
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Secundario-opacidad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 
-    .titulo-proyecto {
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      padding: 0 20px;
-    }
+}
 
-    .iconos-proyecto {
-      display: flex;
-      gap: 20px;
-    }
+.grid-item-left:hover .overlay-hover,
+.grid-item-top:hover .overlay-hover,
+.grid-item-bottom-left:hover .overlay-hover,
+.grid-item-bottom-right:hover .overlay-hover {
 
-    .iconos-proyecto a {
-      width: 50px;
-      height: 50px;
-      background-color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.3s, transform 0.3s;
-      text-decoration: none;
-    }
+  opacity: 1;
 
-    .iconos-proyecto a:hover {
-      background-color: #c9a961;
-      transform: scale(1.1);
-    }
+}
 
-    .iconos-proyecto a img {
-      width: 24px;
-      height: 24px;
-      object-fit: contain;
-    }
+.titulo-proyecto {
+
+  color: var(--Texto);
+  font-size: var(--Font-size-h3);
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.iconos-proyecto {
+
+  display: flex;
+  gap: 20px;
+
+}
+
+.iconos-proyecto a {
+
+  width: 50px;
+  height: 50px;
+  background-color: var(--Primario);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+
+}
+
+.iconos-proyecto a:hover {
+
+  background-color: var(--Apoyo);
+  transform: scale(1.1);
+
+}
+
+.iconos-proyecto a img {
+
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+
+}
