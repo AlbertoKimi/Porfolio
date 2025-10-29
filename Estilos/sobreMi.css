@@ -1,0 +1,49 @@
+.bios {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+
+.titulo-bios {
+    
+    font-size: var(--font-size-h3);
+    font-weight: bold;
+    line-height: 1.3;
+    color: #222;
+
+}
+
+.parrafo {
+
+    font-size: var(--font-size-p);
+    line-height: 1.2;
+    color: var(--Texto);
+    text-align: justify;
+
+}
+
+
+.imagen-perfil {
+
+    width: 400px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.imagen-perfil img {
+
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    display: block;
+
+}
+
