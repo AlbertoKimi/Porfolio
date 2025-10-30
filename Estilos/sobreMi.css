@@ -12,15 +12,17 @@
 .titulo-bios {
     
     font-size: var(--font-size-h3);
+    font-family: var(--Family-rest);
     font-weight: bold;
     line-height: 1.3;
-    color: #222;
+    color: var(--Texto);
 
 }
 
 .parrafo {
 
     font-size: var(--font-size-p);
+    font-family: var(--Family-rest);
     line-height: 1.2;
     color: var(--Texto);
     text-align: justify;

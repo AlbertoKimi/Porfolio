@@ -1,21 +1,21 @@
-.grid-item-left {
+.grid-izquierda {
 
     flex: 0 0 400px;
     height: 100%;
     border: 5px solid var(--Texto);
-    background-color: #d3d3d3;
+    /*background-color: #d3d3d3;*/
     position: relative;
     overflow: hidden;
       
 }
 
-.grid-item-left img{
+.grid-izquierda img{
   width: 100%;
   height: 100%;
   object-fit:fill;
 }
 
-.grid-right {
+.grid-derecha {
 
     flex: 1;
     display: flex;
@@ -28,11 +28,11 @@
       
 }
 
-.grid-item-top {
+.grid-arriba-d {
 
     flex: 1;
     border: 5px solid var(--Texto);
-    background-color: #d3d3d3;
+    /*background-color: #d3d3d3;*/
     min-height: 0;
     width: 100%;
     position: relative;
@@ -40,7 +40,7 @@
 
 }
 
-.grid-item-top img{
+.grid-arriba-d img{
   object-position: center top;
   width: 100%;
   height: 100%;
@@ -48,7 +48,7 @@
 
 }
 
-.grid-bottom {
+.grid-abajo {
 
     flex: 2;
     display: flex;
@@ -59,11 +59,11 @@
 
 }
 
-.grid-item-bottom-left {
+.grid-abajo-izquierda {
 
     flex: 1 1 0;
     border: 5px solid var(--Texto);
-    background-color: #d3d3d3;
+    background-color: var(--Formulario);
     min-width: 0;
     width: 100%;
     position: relative;
@@ -71,11 +71,11 @@
 
 }
 
-.grid-item-bottom-right {
+.grid-abajo-derecha {
 
     flex: 1 1 0;
     border: 5px solid var(--Texto);
-    background-color: #d3d3d3;
+    background-color: var(--Formulario);
     min-width: 0;
     width: 100%;
     position: relative;
@@ -85,7 +85,7 @@
 
  /* HOVER */
 
-.overlay-hover {
+.capa-hover {
 
   position: absolute;
   top: 0;
@@ -103,10 +103,10 @@
 
 }
 
-.grid-item-left:hover .overlay-hover,
-.grid-item-top:hover .overlay-hover,
-.grid-item-bottom-left:hover .overlay-hover,
-.grid-item-bottom-right:hover .overlay-hover {
+.grid-izquierda:hover .capa-hover,
+.grid-arriba-d:hover .capa-hover,
+.grid-abajo-izquierda:hover .capa-hover,
+.grid-abajo-derecha:hover .capa-hover {
 
   opacity: 1;
 
