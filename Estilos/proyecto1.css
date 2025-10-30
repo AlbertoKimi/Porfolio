@@ -1,9 +1,10 @@
 .grid-izquierda {
 
-    flex: 0 0 400px;
+    flex: 1 1 400px;
     height: 100%;
     border: 5px solid var(--Texto);
-    /*background-color: #d3d3d3;*/
+    min-width: 300px;
+    max-width: 450px;
     position: relative;
     overflow: hidden;
       
@@ -17,7 +18,8 @@
 
 .grid-derecha {
 
-    flex: 1;
+    flex: 1 1 400px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -32,7 +34,6 @@
 
     flex: 1;
     border: 5px solid var(--Texto);
-    /*background-color: #d3d3d3;*/
     min-height: 0;
     width: 100%;
     position: relative;
@@ -155,4 +156,86 @@
   height: 24px;
   object-fit: contain;
 
+}
+
+/* Media para tablets*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .proyectos {
+        padding: 3rem 5rem;
+    }
+
+    .grid-izquierda {
+        flex: 1 1 280px;
+        min-width: 250px;
+    }
+
+    .grid-derecha {
+        flex: 1 1 280px;
+        min-width: 250px;
+    }
+
+    .caja-comic {
+        height: 450px;
+    }
+}
+
+/* Media para móvil*/
+
+@media (max-width: 768px) {
+    
+    .grid-izquierda {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        height: 300px;
+    }
+
+    
+    .grid-derecha {
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 0;
+        gap: 15px;
+    }
+
+    
+    .grid-arriba-d {
+        width: 100%;
+        height: 250px;
+        min-height: 250px;
+    }
+
+    
+    .grid-abajo {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grid-abajo-izquierda,
+    .grid-abajo-derecha {
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+    }
+
+  
+    .capa-hover h3 {
+        font-size: 18px;
+    }
+
+    .iconos-proyecto {
+        gap: 15px;
+    }
+
+    .iconos-proyecto a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .iconos-proyecto a img {
+        width: 22px;
+        height: 22px;
+    }
 }
