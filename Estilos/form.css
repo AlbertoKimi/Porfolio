@@ -13,8 +13,8 @@
 
 .seccion-comic {
 
-    width: 400px;
-    height: 550px;
+    width: 410px;
+    height: 610px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -31,8 +31,8 @@
 
 .imagen-comic img {
 
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
 
@@ -117,5 +117,31 @@
 .boton-enviar:hover {
 
       background-color: var(--Apoyo);
+
+}
+
+/*Media para móvil*/
+
+@media (max-width: 768px) {
+
+    .contenedor-principal{
+
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 5px; 
+    }
+
+    .seccion-formulario{
+
+        width: 100%;
+    }
+
+    /*La imagen ¿cómo la puedo controlar para que se vea bien?¿Valores fijos?*/
+
+    .seccion-comic{
+
+        width: 100%;
+    }
 
 }

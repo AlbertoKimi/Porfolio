@@ -182,6 +182,8 @@
 
 /* Media para móvil*/
 
+/*¿Cómo controlar el tamaño de las imágenes?---> PREGUNTAR*/
+
 @media (max-width: 768px) {
     
     .grid-izquierda {
@@ -203,10 +205,9 @@
     
     .grid-arriba-d {
         width: 100%;
-        height: 250px;
-        min-height: 250px;
+        height: auto;
+        min-height: 95px;
     }
-
     
     .grid-abajo {
         flex-direction: column;

@@ -15,11 +15,13 @@
   --Texto: #000000;
   --Formulario: #bbb;
 
+
   --font-size-h1: 48px;
   --font-size-h2: 32px;
   --font-size-h3: 24px;
   --font-size-p: 20px;
   --small-size: 16px;
+  --minimum-size: 14px;
 
   --Family-h1: 'Carrois Gothic';
   --Family-rest: 'Bree Serif';
@@ -136,7 +138,7 @@ main {
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    height: 550px;
+    /*height: 550px;*/ /*si lo quito no me funciona bien los dos cuadrados de abajo*/
     width: 100%;
     padding: 20px;
 

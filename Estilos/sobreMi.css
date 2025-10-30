@@ -25,7 +25,7 @@
     font-family: var(--Family-rest);
     line-height: 1.2;
     color: var(--Texto);
-    text-align: justify;
+    
 
 }
 
@@ -47,5 +47,70 @@
     object-fit: cover;
     display: block;
 
+}
+
+/*Media para tablets*/
+
+/*Preguntar la media porque no se me ve bien cuando voy estirando gradualmente*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .bios {
+
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .titulo-bios {
+        width: 100%;
+        font-size: var(--font-size-h3);
+    }
+
+    .parrafo {
+
+        width: 100%;
+        font-size: var(--minimum-size);
+
+    }
+
+    .imagen-perfil {
+
+        margin-top: 50px;
+        width: 50%;
+        height: auto;
+        
+    }
+
+}
+
+/*Media para móviles*/
+
+@media (max-width: 768px) {
+
+    .bios {
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .titulo-bios {
+        font-size: var(--font-size-h3);
+    }
+
+    .parrafo {
+        font-size: var(--small-size);
+
+    }
+
+    .imagen-perfil {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen-perfil img {
+        width: 100%;
+        height: auto;
+    }
 }
 

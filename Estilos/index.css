@@ -33,18 +33,22 @@ body{
     background-image: url('../Imagenes/fondo-index.png');
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
+    padding: 20px;
     
 }
 
 .contenedor-texto{
     width: 550px;
-    height: 350px;
+    max-width: 100%;
+    height: auto;
+    min-height: 350px;
     background-color: var(--Apoyo-opacidad);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    padding: 40px 30px;
     
 }
 
@@ -52,15 +56,55 @@ h1{
   color: var(--Primario);
   font-size: var(--font-size-h1);
   font-family: var(--Family-h1);
-  margin:50px;
+  margin: 0 0 40px 0;
   text-align: center;
   
 }
 
-a{
+.comenzar{
+
+  margin-top: 20px;
+
+}
+
+.comenzar a{
   text-decoration: none;
   color: var(--Primario);
   font-size: var(--font-size-h2);
   font-family: var(--Family-rest);
+  padding: 15px 40px;
+  display: inline-block;
   
+}
+
+@media (max-width: 768px) {
+    
+  body {
+
+      padding: 15px;
+
+    }
+
+  .contenedor-texto {
+
+      width: 90%;
+      max-width: 500px;
+      min-height: 300px;
+      padding: 35px 25px;
+
+    }
+
+  h1 {
+
+      font-size: 36px;
+      margin: 0 0 30px 0;
+
+    }
+
+  .comenzar a {
+
+      font-size: 26px;
+      padding: 12px 35px;
+      
+    }
 }
