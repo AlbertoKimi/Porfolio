@@ -1,6 +1,7 @@
 .contenedor-principal {
 
     max-width: 1500px;
+    min-width: 350px;
     width: 100%;
     display: flex;
     gap: 100px;
@@ -41,7 +42,7 @@
 .seccion-formulario {
 
     width: 380px;
-    background-color: var(--Primario);
+    background-color: var(--Secundario);
     border-radius: 15px;
     padding: 35px;
 
@@ -59,7 +60,7 @@
     font-size: var(--font-size-p);
     font-weight: 500;
     font-family: var(--Family-rest);
-    color: var(--Texto);
+    color: var(--Primario);
     margin-bottom: 8px;
 
 }
@@ -73,7 +74,7 @@
     border-radius: 8px;
     font-size: var(--small-size);
     font-family: var(--Family-rest);
-    background-color: var(--Primario);
+    background-color: var(--Secundario);
     transition: border-color 0.3s;
 
 }
@@ -103,9 +104,9 @@
 
     width: 100%;
     padding: 14px;
-    background-color: var(--Secundario);
+    background-color: var(--Apoyo);
     color: var(--Primario);
-    border: 2px solid var(--Texto);
+    border: 2px solid var(--Primario);
     border-radius: 8px;
     font-size: var(--font-size-p);
     font-weight: 500;
@@ -116,7 +117,8 @@
 
 .boton-enviar:hover {
 
-      background-color: var(--Apoyo);
+    background: var(--Primario);
+    color: var(--Apoyo);
 
 }
 
@@ -124,24 +126,26 @@
 
 @media (max-width: 768px) {
 
-    .contenedor-principal{
+    .contenedor-principal {
 
         flex-direction: column;
         height: auto;
         padding: 15px;
-        gap: 5px; 
+        gap: 5px;
+        min-width: 320px;
     }
 
-    .seccion-formulario{
+    .seccion-formulario {
 
         width: 100%;
+        min-width: 280px;
     }
 
-    /*La imagen ¿cómo la puedo controlar para que se vea bien?¿Valores fijos?*/
-
-    .seccion-comic{
+    .seccion-comic {
 
         width: 100%;
+        height: auto;
+        min-height: 400px;
     }
 
 }

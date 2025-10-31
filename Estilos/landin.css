@@ -1,6 +1,6 @@
 .caja-proyecto {
 
-    background-color: var(--Primario-opacidad);
+    background-color: var(--Secundario-opacidad);
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -27,7 +27,7 @@
 
 .sobremi {
 
-    background: var(--Secundario-opacidad);
+    background: var(--Terciario-opacidad);
     padding: 3rem;
     text-align: center;
     position: relative;
@@ -40,7 +40,6 @@
     font-size: var(--font-size-h2);
     font-family: var(--Family-rest);
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
 
@@ -63,7 +62,7 @@
     flex: 1;
     max-width: 600px;
     text-align: center;
-    color: var(--Texto);
+    color: var(--Primario);
     position: relative;
     z-index: 1;
 
@@ -73,7 +72,7 @@
     font-family: var(--Family-rest);
     font-size: var(--font-size-h2);
     margin-bottom: 1.5rem;
-    color: var(--Apoyo);
+    color: var(--Primario);
     margin-top: 100px;
 
 }
@@ -84,7 +83,7 @@
     line-height: 1.8;
     font-size: var(--font-size-p);
     font-family: var(--Family-rest);
-    color: var(--Texto);
+    color: var(--Primario);
 
 }
 
@@ -95,6 +94,7 @@
     background: var(--Apoyo);
     color:var(--Primario);
     text-decoration: none;
+    border: 2px solid var(--Primario);
     border-radius: 5px;
     font-weight: bold;
     font-size: var(--font-size-p);
@@ -117,6 +117,7 @@
     background: var(--Apoyo);
     color: var(--Primario);
     text-decoration: none;
+    border: 2px solid var(--Primario);
     border-radius: 5px;
     font-weight: bold;
     font-size: var(--font-size-p);
@@ -130,7 +131,8 @@
 
 .boton-secundario:hover {
 
-    background: var(--Secundario);
+    background: var(--Primario);
+    color: var(--Apoyo);
 
 }
 
