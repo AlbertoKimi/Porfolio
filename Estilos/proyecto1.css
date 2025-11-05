@@ -34,7 +34,7 @@
 
 .grid-arriba-d {
 
-    flex: 1;
+    /*flex: 1;*/
     border: 5px solid var(--Primario);
     min-height: 150px;
     width: 100%;
@@ -69,10 +69,20 @@
     flex: 1 1 0;
     border: 5px solid var(--Primario);
     background-color: var(--Formulario);
+    height: 485px;
     min-width: 0;
     width: 100%;
     position: relative;
     overflow: hidden;
+
+}
+
+.grid-abajo-izquierda img {
+
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -223,7 +233,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center;
+        object-position: center left;
 
     }
 
@@ -238,6 +248,15 @@
         width: 100%;
         height: 200px;
         min-height: 200px;
+    }
+
+    .grid-abajo-izquierda img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+
     }
 
 
