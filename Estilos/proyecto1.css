@@ -180,6 +180,34 @@
 
 }
 
+.navegacion-proyectos {
+    display: flex;
+    justify-content: center; 
+    padding: 30px 0; 
+}
+
+.navegacion-proyectos a {
+    
+    background-color: var(--Apoyo); 
+    color: var(--Primario); 
+    font-size: var(--Font-size-h3); 
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 3px solid var(--Primario); 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-weight: bold;
+    
+    z-index: 10; 
+    position: relative;
+}
+
+.navegacion-proyectos a:hover {
+    background-color: var(--Secundario);
+    color: var(--Apoyo); 
+    border-color: #000000; 
+}
+
 /* Media para tablets*/
 
 @media (min-width: 769px) and (max-width: 1024px) {
